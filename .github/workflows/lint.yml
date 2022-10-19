@@ -8,4 +8,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: lint
-      uses: anderssonpeter/cloud-init-linter@v0.5
+      uses: anderssonpeter/cloud-init-linter@v0.6
