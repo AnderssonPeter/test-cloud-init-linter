@@ -1,0 +1,12 @@
+#cloud-config
+hostname: invalid2
+users:
+  - name: peter
+    gecos: Peter Andersson
+    groups: adm, users, sudo, docker
+    lock_passwd: true
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/zsh
+
+packages:
+zsh

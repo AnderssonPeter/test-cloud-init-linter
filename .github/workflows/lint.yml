@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: lint
+      uses: anderssonpeter/cloud-init-linter@v0.1
